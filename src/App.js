@@ -74,7 +74,6 @@ function App() {
                 <Route path='/all-api' element={<Navigate to='/login' />} />
                 <Route path='/tables' element={<Navigate to='/login' />} />
                 <Route path='/dashboard' element={<Navigate to='/login' />} />
-                {/* <Navigate replace to="/login"  element={<MainLogin />} /> */}
                 </>
               )}
             </Routes>
