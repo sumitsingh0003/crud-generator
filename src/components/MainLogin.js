@@ -33,7 +33,10 @@ const MainLogin = () => {
 
   const navigationPage = () => {
     setTimeout(() => {
-      navigate('/dashboard');
+    const token= localStorage.getItem("token");
+      if(token){
+        navigate('/dashboard');
+      }
     }, 2000);
   };
 
@@ -55,7 +58,6 @@ const MainLogin = () => {
           ab ipsum nisi dolorem modi. Quos?
         </p>
       </div>
-
       <div className="col-lg-6 mb-5 mb-lg-0 position-relative">
         <div id="radius-shape-1" className="position-absolute rounded-circle shadow-5-strong"></div>
         <div id="radius-shape-2" className="position-absolute shadow-5-strong"></div>
